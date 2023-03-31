@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CirroCloud Solutions</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
+    />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.3.0-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/blog-details.css" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <!-- container -->
+    <!-- end of container -->
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <a href="index">
+            <img
+              src="./images/logo_no_slogan.svg"
+              class="nav-logo"
+              alt="nav logo"
+              height="60"
+            />
+          </a>
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index">home</a>
+          </li>
+          <li>
+            <a href="about">about us</a>
+          </li>
+          <li>
+            <a href="services">services</a>
+          </li>
+          <li>
+            <a href="Projects">projects</a>
+          </li>
+          <li>
+            <a href="blog" class="active">blog</a>
+          </li>
+          <li>
+            <a href="contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index">home</a>
+          </li>
+          <li>
+            <a href="about">about us</a>
+          </li>
+          <li>
+            <a href="services">services</a>
+          </li>
+          <li>
+            <a href="Projects">projects</a>
+          </li>
+          <li>
+            <a href="blog">blog</a>
+          </li>
+          <li>
+            <a href="contact">contact</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-squarespace"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- end of services -->
+
+    <!-- blog -->
+    <section class="section">
+      <div class="blog-detail">
+        <button class="edit-btn">Edit</button>
+        <img class="blog-detail-image" src="" alt="" />
+        <h1 class="blog-detail-title"></h1>
+        <small class="blog-detail-date"></small>
+        <p class="blog-detail-readTime"></p>
+        <p class="blog-detail-content"></p>
+      </div>
+      <div
+        class="fb-comments"
+        data-href=""
+        data-width="100%"
+        data-numposts="5"
+      ></div>
+    </section>
+    <!--end of  blog -->
+
+    <script src="./js/app.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GNHVFN0CGQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-GNHVFN0CGQ');
+    </script>
+    <script
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"
+      async
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/blog.js"></script>
+    <script>
+      blogApp.displayBlogDetail();
+    </script>
+  </body>
+</html>
